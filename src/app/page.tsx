@@ -94,11 +94,11 @@ export default function Home() {
             <div className="card-copy"><h3>{item.name}</h3><p>{item.description}</p><button type="button" className="try-button" onClick={(event) => openTrial(event, item.id)}>Хочу попробовать<Arrow /></button></div>
           </article>)}
         </div>
-        <p className="directions-note"><span aria-hidden="true">↗</span> Стоимость, расписание и условия первого занятия — <button className="text-button" type="button" onClick={(event) => openTrial(event)}>Уточнить в WhatsApp</button></p>
+        <div className="directions-note"><Arrow diagonal /><p>Стоимость, расписание и условия первого занятия — <button className="text-button" type="button" onClick={(event) => openTrial(event)}>Уточнить в WhatsApp</button></p></div>
       </section>
 
       <section className="faq-section" id="first-time" aria-labelledby="faq-title"><div className="faq-layout wrap section-space">
-        <div className="faq-heading"><p className="eyebrow section-number">02 / Первый шаг</p><h2 id="faq-title">Если вы<br /><em>впервые</em></h2><p>Не обязательно знать всё заранее.<br />Начните с простых вопросов.</p><FlightMark className="faq-mark" /></div>
+        <div className="faq-heading"><p className="eyebrow section-number">02 / Первый шаг</p><h2 id="faq-title">Если вы{' '}<br /><em>впервые</em></h2><p>Не обязательно знать всё заранее.<br />Начните с простых вопросов.</p><FlightMark className="faq-mark" /></div>
         <div className="questions">{questions.map((item, index) => <details key={item.question}><summary><span className="question-number">0{index + 1}</span><span>{item.question}</span><span className="plus" aria-hidden="true" /></summary><div className="answer"><p>{item.answer}</p><button className="text-button" type="button" onClick={(event) => openTrial(event)}>Уточнить в WhatsApp <Arrow diagonal /></button></div></details>)}</div>
       </div></section>
 
