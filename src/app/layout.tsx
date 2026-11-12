@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  icons: { icon: '/icon.svg' },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/icon.svg` },
   title: 'Body Flight — первое занятие в Павлодаре',
   description: 'Воздушная гимнастика, pole dance и стретчинг в Павлодаре. Выберите направление и узнайте о пробном занятии в WhatsApp. Концепция от Flare Studio.',
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
