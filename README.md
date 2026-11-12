@@ -52,8 +52,8 @@ npm run build
 
 ## GitHub Pages
 
-Планируемый адрес после создания репозитория и публикации: https://sssad-a-little-bit.github.io/body-flight-demo/
+Адрес GitHub Pages: https://sssad-a-little-bit.github.io/body-flight-demo/
 
 Workflow `.github/workflows/pages.yml` запускает тесты, собирает статический сайт и публикует его в GitHub Pages при push в `main`. Источник Pages в настройках репозитория — GitHub Actions. Перед сборкой задаётся `NEXT_PUBLIC_BASE_PATH=/body-flight-demo`, чтобы ресурсы правильно загружались из подпапки. Локальный запуск без этой переменной продолжает работать по корневому адресу.
 
-Для GitHub Pages нужен публичный репозиторий (либо поддерживающий приватные Pages тариф). Публикация пока не выполнена: у подключённой GitHub-интеграции нет права создавать репозитории. Метатег noindex сохранён.
+Для GitHub Pages нужен публичный репозиторий (либо поддерживающий приватные Pages тариф). Публикация выполняется GitHub Actions из ветки main. Метатег noindex сохранён.
